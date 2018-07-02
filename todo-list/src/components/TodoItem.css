@@ -1,0 +1,47 @@
+.todo-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+}
+
+.todo-item:hover {
+    background: #e3fafc;
+}
+
+/* only when hover on todo-item, .remove comes out */
+
+.todo-item:hover .remove {
+    opacity:1;
+}
+
+.todo-item + .todo-item {
+    border-top: 1px solid blue;
+}
+
+.remove {
+    margin-right: 2rem;
+    color: red;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.todo-text {
+    flex: 1; /fill out all space except check and X
+    word-break: break-all;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #adb5bd;
+}
+
+.check-mark {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    color: #3bc9db;
+    font-weight: 800;
+}
